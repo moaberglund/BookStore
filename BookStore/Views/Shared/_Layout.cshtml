@@ -1,18 +1,22 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - BookStore</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
+
 <body>
     <header>
-      <nav>
-          <ul>
-              
-          </ul>
-      </nav>
+        <nav>
+            <ul>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-area="" asp-controller="Book" asp-action="Index">Books</a></li>
+                <li><a asp-area="" asp-controller="Status" asp-action="Index">Status</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div>
@@ -30,4 +34,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>
