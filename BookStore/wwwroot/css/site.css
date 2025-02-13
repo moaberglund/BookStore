@@ -145,6 +145,13 @@ form label {
   color: #313338;
 }
 
+form textarea {
+  padding: 0.7em;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-top: 2px;
+}
+
 form input,
 select,
 option {
