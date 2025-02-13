@@ -1,143 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 main {
-    min-height: 85dvh;
-    
+  min-height: 85dvh;
 }
 
 .homepage-box {
-    text-align: center;
-    padding: 2em;
-    border: 1px solid black;
-    width: 300px;
-    margin: 2em auto;
-    border-radius: 5px;
-    background-color: #f8f9fa;
-    line-height: 1.5em;
+  text-align: center;
+  padding: 2em;
+  border: 1px solid black;
+  width: 300px;
+  margin: 2em auto;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  line-height: 1.5em;
 }
 
 header {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
 }
 
-    header nav {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-    }
-        header nav ul {
-            display: flex;
-            list-style-type: none;
-            padding: 1em;
-        }
+header nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 1em;
+}
 
-            header nav ul li {
-                margin: 0 1em;
-            }
+header nav ul li {
+  margin: 0 1em;
+}
 
-                header nav ul li a {
-                    color: white;
-                    text-decoration: none;
-                    font-size: 1.2em;
-                    letter-spacing: 1px;
-                }
-                    header nav ul li a:hover {
-                        color: beige;
-                    }
-
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+header nav ul li a:hover {
+  color: beige;
+}
 
 h1 {
-    text-align: center;
+  text-align: center;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.7em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 140px;
+  text-align: center;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
 }
 
 .book-info {
-    text-align: center;
-    margin-top: 3em;
-    line-height: 1.5;
-    background-color: #f8f9fa;
-    padding:2em
+  text-align: center;
+  margin-top: 3em;
+  line-height: 1.5;
+  background-color: #f8f9fa;
+  padding: 2em;
 }
 
 .books {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .book {
-    width: 200px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    line-height: 1.5;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 1.5;
 }
-    .book h1 {
-        font-size: 1.2em;
-        margin: 0.5em 0;
-    }
-    .book h2 {
-        font-size: 1em;
-        margin: 0.5em 0;
-    }
+.book h1 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+.book h2 {
+  font-size: 1em;
+  margin: 0.5em 0;
+}
+
+.statuses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.status {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 1.5;
+}
 
 form {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    max-width: 98%;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  max-width: 98%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-    form label {
-        font-weight: bold;
-        color: #313338;
-        color: #313338;
-    }
+form label {
+  font-weight: bold;
+  color: #313338;
+  color: #313338;
+}
 
-    form input, select, option {
-        padding: 0.7em;
-        border-radius: 5px;
-        border: 1px solid black;
-        margin-top: 2px;
-    }
+form input,
+select,
+option {
+  padding: 0.7em;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-top: 2px;
+}
 
-    form label, div {
-        margin-top: 1em;
-    }
+form label,
+div {
+  margin-top: 1em;
+}
 
-    form input[type="submit"] {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        padding: 0.7em;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 1em;
-        margin-top: 2em;
-    }
+form input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.7em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 2em;
+}
 
 footer {
-    text-align: center;
-    padding: 10px 0;
-    bottom: 0;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
 }

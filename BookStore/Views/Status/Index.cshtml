@@ -6,27 +6,26 @@
 
 <h1>Reading Status</h1>
 
-<p>
+<div class="btn">
     <a asp-action="Create">Create New</a>
-</p>
-
-<div>
-    @Html.DisplayNameFor(model => model.ReadingStatus)
 </div>
 
+<div class="statuses">
 
-@foreach (var item in Model)
-{
-    <div class="status">
-        <div>
-            <h1>
-                @Html.DisplayFor(modelItem => item.ReadingStatus)
-            </h1>
+    @foreach (var item in Model)
+    {
+        <div class="status">
+            <div>
+                <h1>
+                    @Html.DisplayFor(modelItem => item.ReadingStatus)
+                </h1>
+            </div>
+            <div>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </div>
         </div>
-        <div>
-            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-        </div>
-    </div>
-}
+    }
+
+</div>
