@@ -76,7 +76,7 @@ h1 {
   text-align: center;
 }
 
-.btn a {
+.btn, .btn a {
   color: white;
   text-decoration: none;
 }
@@ -103,9 +103,10 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: center;
-  line-height: 1.5;
+  line-height: 2;
 }
 .book h1 {
+  line-height: 1.5em;
   font-size: 1.2em;
   margin: 0.5em 0;
   height: 3em;
@@ -115,6 +116,34 @@ h1 {
   font-size: 1em;
   margin: 0.5em 0;
   height: 2em;
+}
+
+.book .description-heading {
+  padding-top: 0.5em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  border-bottom: 1px solid grey;
+}
+
+.book .description-text {
+  min-height: 4em;
+  border-bottom: 1px solid grey;
+  padding-top: 0.5em;
+  font-size: 0.8em;
+}
+
+.details {
+  width: 300px;
+  padding: 2em;
+  margin: 4em auto;
+  border: #007bff 1px solid;
+}
+
+.details-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
 }
 
 .statuses {
