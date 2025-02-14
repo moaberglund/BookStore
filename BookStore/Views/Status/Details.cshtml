@@ -4,21 +4,39 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>Details - @Html.DisplayFor(model => model.ReadingStatus)</h1>
 
 <div>
-    <h4>Status</h4>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ReadingStatus)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ReadingStatus)
-        </dd>
-    </dl>
+    <div>
+
+        <h2 class="col-sm-10">
+            
+        </h2>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+
+<div class="details">
+    <h2>Books in this status:</h2>
+
+    @if (Model.Books != null && Model.Books.Any())
+    {
+        <div>
+            @foreach (var book in Model.Books)
+            {
+                <div class="book">
+                    <h2>@book.Title</h2>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p>No books in this status.</p>
+    }
+</div>
+<div class="details-actions">
+    <a class="btn-back" asp-action="Index">Back to List</a>
+    <a class="btn" asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    
 </div>

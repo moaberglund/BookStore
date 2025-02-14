@@ -34,6 +34,7 @@ namespace BookStore.Controllers
             }
 
             var status = await _context.Statuses
+                .Include(s => s.Books) // Include the related Books
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (status == null)
             {
