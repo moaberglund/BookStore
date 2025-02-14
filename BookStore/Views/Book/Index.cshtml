@@ -21,9 +21,19 @@
             <h2>
                 @Html.DisplayFor(modelItem => item.Author)
             </h2>
-            <p>
-                @Html.DisplayFor(modelItem => item.Rating)
-            </p>
+
+            <!-- Stjärnbetyg -->
+            @for (int i = 1; i <= 5; i++)
+            {
+                if (item.Rating.HasValue && i <= item.Rating.Value)
+                {
+                    <span style="color: gold;">&#9733;</span> <!-- Gold star -->
+                }
+                else
+                {
+                    <span style="color: lightgray;">&#9734;</span> <!-- Empty star -->
+                }
+            }
             <p>
                 @Html.DisplayFor(modelItem => item.Status.ReadingStatus)
             </p>
