@@ -40,15 +40,11 @@
     <select asp-for="StatusId" class="form-control" asp-items="ViewBag.StatusId"></select>
     <span asp-validation-for="StatusId" class="text-danger"></span>
 
-    <div class="form-group">
+    <div class="details-actions">
+        <a class="btn-back" asp-action="Index">Back to List</a>
         <input type="submit" value="Save" class="btn btn-primary" />
     </div>
 </form>
-
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{
