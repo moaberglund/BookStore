@@ -33,7 +33,14 @@
     <span asp-validation-for="Year" class="text-danger"></span>
 
     <label asp-for="Rating" class="control-label"></label>
-    <input asp-for="Rating" class="form-control" />
+    <select asp-for="Rating" class="form-control">
+        <option value="">-- Select --</option>
+        <option value="1">⭐</option>
+        <option value="2">⭐ ⭐</option>
+        <option value="3">⭐ ⭐ ⭐</option>
+        <option value="4">⭐ ⭐ ⭐ ⭐</option>
+        <option value="5">⭐ ⭐ ⭐ ⭐ ⭐</option>
+    </select>
     <span asp-validation-for="Rating" class="text-danger"></span>
 
     <label asp-for="StatusId" class="control-label"></label>
