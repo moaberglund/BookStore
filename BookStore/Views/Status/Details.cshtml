@@ -11,7 +11,7 @@
     <div>
 
         <h2 class="col-sm-10">
-            
+
         </h2>
     </div>
 </div>
@@ -26,8 +26,21 @@
             {
                 <div class="book">
                     <h2>@book.Title</h2>
+                    <!-- Stjärnbetyg -->
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        if (book.Rating.HasValue && i <= book.Rating.Value)
+                        {
+                            <span style="color: gold;">&#9733;</span> <!-- Gold star -->
+                        }
+                        else
+                        {
+                            <span style="color: lightgray;">&#9734;</span> <!-- Empty star -->
+                        }
+                    }
                 </div>
             }
+
         </div>
     }
     else
@@ -38,5 +51,5 @@
 <div class="details-actions">
     <a class="btn-back" asp-action="Index">Back to List</a>
     <a class="btn" asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    
+
 </div>
