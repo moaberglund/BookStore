@@ -17,6 +17,16 @@ main {
   min-height: 85dvh;
 }
 
+article {
+  margin: 2em auto 0 auto;
+  padding: 1em;
+  line-height: 1.6em;
+}
+article ul li {
+  list-style-type: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .homepage-box {
   text-align: center;
   padding: 2em;
